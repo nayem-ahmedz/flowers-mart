@@ -1,5 +1,132 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #F5F8FF;
+}
+
+/* shared styles */
+.container {
+  max-width: 1172px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading-2{
+  font-size: 1rem;
+}
+main > section{
+  margin: 120px auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Nav */
+nav ul {
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  padding: 10px 20px;
+  color: #8987A1;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+}
+.active{
+  font-weight: bold;
+  color: #252432;
+}
+.cart-btn{
+  color: black;
+}
+
+
+/* Hero Section */
+.hero{
+  display: flex;
+  align-items: flex-end;
+}
+.hero h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero h1 span{
+  color: #E95A08;
+}
+.hero p{
+  font-size: 1.375rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px){
+  .hero{
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px){
+  nav ul li a{
+    padding: 10px 13px;
+  }
+  main > section{
+    margin: 60px auto;
+  }
+  .hero h1{
+    font-size: 3rem;
+  }
+  .hero p{
+    font-size: 1.125rem;
+  }
+  .hero img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 570px){
+  header .logo{
+    width: 65px;
+    height: auto;
+  }
+  nav ul li a:not(.cart-btn) {
+    display: none;
+  }
+  main > section{
+    margin: 30px auto 60px;
+  }
+  .hero{
+    gap: 28px;
+  }
+  .hero h1{
+    font-size: 1.5rem;
+  }
+  .hero p{
+    font-size: 0.875rem;
+  }
 }
