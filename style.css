@@ -34,6 +34,29 @@ body{
 main > section{
   margin: 120px auto;
 }
+.article-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-variation-settings: "wdth" 100;
+}
+.article-title span{
+  color: #E95A08;
+}
+.article-subtitle{
+  font-size: 1.375rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.subtitle-centered{
+  text-align: center;
+  max-width: 890px;
+  margin: 16px auto 55px;
+}
+.hidden{
+  display: none !important;
+}
 
 /* Header */
 header {
@@ -79,10 +102,41 @@ nav ul li a{
 .hero h1 span{
   color: #E95A08;
 }
-.hero p{
+
+
+/* Section : Collection */
+.collection-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.card{
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.card img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.card h4{
   font-size: 1.375rem;
-  margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  color: #111111;
+}
+.card h5{
+  margin: 8px auto 20px;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #111111;
+}
+.card button{
+  width: 100%;
+  background-color: #E95A08;
+  padding: 16px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
 }
 
 /* Responsive Design */
@@ -90,6 +144,12 @@ nav ul li a{
   .hero{
     flex-direction: column-reverse;
     gap: 40px;
+  }
+  .card h4, .card h5{
+    font-size: 1.125rem;
+  }
+  .collection-cards{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 768px){
@@ -99,6 +159,12 @@ nav ul li a{
   main > section{
     margin: 60px auto;
   }
+  .article-title{
+    font-size: 2.5rem;
+  }
+  .article-subtitle{
+    font-size: 1.125rem;
+  }
   .hero h1{
     font-size: 3rem;
   }
@@ -107,6 +173,12 @@ nav ul li a{
   }
   .hero img{
     width: 100%;
+  }
+  .collection-cards{
+    gap: 28px 20px;
+  }
+  .card img{
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 570px){
@@ -120,6 +192,15 @@ nav ul li a{
   main > section{
     margin: 30px auto 60px;
   }
+  .article-title{
+    font-size: 1.5rem;
+  }
+  .article-subtitle{
+    font-size: 0.875rem;
+  }
+  .subtitle-centered{
+    margin: 16px auto 28px;
+  }
   .hero{
     gap: 28px;
   }
@@ -128,5 +209,11 @@ nav ul li a{
   }
   .hero p{
     font-size: 0.875rem;
+  }
+  .collection-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card h4, .card h5{
+    font-size: 1rem;
   }
 }
