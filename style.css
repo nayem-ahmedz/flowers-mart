@@ -200,6 +200,38 @@ nav ul li a{
   font-size: 1.75rem;
 }
 
+/* section : newsletter */
+.newsletter{
+  color: white;
+  padding: 200px 20px;
+  text-align: center;
+  background-image: url('./assets/news-letter-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.email-field{
+  margin: 23px auto auto;
+  max-width: 830px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.email-field input{
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+}
+.email-field input[type="email"]{
+  width: 100%;
+}
+.email-field input[type="button"]{
+  color: white;
+  padding: 15px 50px;
+  background-color: #E95A08;
+  font-weight: 600;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 992px){
   .hero{
@@ -313,5 +345,14 @@ nav ul li a{
     background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url('./assets/deal-zabo.png');
     grid-column: span 1;
     grid-row: span 1;
+  }
+  .newsletter{
+    padding: 110px 20px 64px;
+  }
+  .email-field{
+    width: 95%;
+  }
+  .email-field input[type="button"]{
+    padding: 15px;
   }
 }
