@@ -10,7 +10,7 @@ providing best flowers in online
 
 ## Project Timeline
 - created on 23 July 2025
-- completed on --
-- last updated on 23 July 2025, BDT 10:20 PM
+- completed on 25 July 2025
+- last updated on 25 July 2025, BDT 10:40 PM
 
 Feel free to contact for any query!
