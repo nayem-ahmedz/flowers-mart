@@ -1,3 +1,3 @@
 function addToCart(){
-    alert('Added to CART');
+    alert('Flower Added to Cart');
 }

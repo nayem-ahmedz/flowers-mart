@@ -134,6 +134,7 @@ nav ul li a{
   font-size: 1rem;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
 
 /* section Banner */
@@ -277,6 +278,9 @@ footer ul li a{
 }
 .twitter-logo{
   transform: translateY(10px);
+}
+a:hover{
+  text-decoration: 1px solid underline;
 }
 
 /* Responsive Design */
