@@ -139,6 +139,22 @@ nav ul li a{
   border: none;
 }
 
+/* section Banner */
+.banner{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.banner h2{
+  text-align: left;
+}
+.banner ul{
+  padding-left: 35px;
+}
+.banner ul li{
+  margin-bottom: 20px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 992px){
   .hero{
@@ -150,6 +166,9 @@ nav ul li a{
   }
   .collection-cards{
     grid-template-columns: repeat(3, 1fr);
+  }
+  .banner{
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px){
@@ -179,6 +198,9 @@ nav ul li a{
   }
   .card img{
     margin-bottom: 20px;
+  }
+  .banner img{
+    width: 100%;
   }
 }
 @media screen and (max-width: 570px){
@@ -215,5 +237,11 @@ nav ul li a{
   }
   .card h4, .card h5{
     font-size: 1rem;
+  }
+  .banner{
+    gap: 18px;
+  }
+  .banner ul{
+    padding-left: 20px;
   }
 }
