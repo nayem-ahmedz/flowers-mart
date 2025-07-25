@@ -232,6 +232,43 @@ nav ul li a{
   font-weight: 600;
 }
 
+/* Footer */
+.footer-content{
+  padding: 50px 16px;
+  display: grid;
+  grid-template-columns: 360px 323px 216px;
+  justify-content: space-between;
+}
+.footer-info{
+  font-size: 1rem !important;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+footer ul{
+  list-style-type: none;
+}
+footer ul li a{
+  color: rgba(107, 114, 128, 1);
+  margin-bottom: 40px;
+}
+.footer-links ul li:last-child a{
+  margin-bottom: 20px;
+}
+.social-links{
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.social-links a, footer ul li a{
+  display: inline-block;
+  text-decoration: none;
+}
+.twitter-logo{
+  transform: translateY(10px);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 992px){
   .hero{
@@ -246,6 +283,10 @@ nav ul li a{
   }
   .banner{
     flex-direction: column;
+  }
+  .footer-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 80px;
   }
 }
 @media screen and (max-width: 768px){
@@ -291,7 +332,7 @@ nav ul li a{
 }
 @media screen and (max-width: 570px){
   header .logo{
-    width: 65px;
+    width: 80px;
     height: auto;
   }
   nav ul li a:not(.cart-btn) {
@@ -354,5 +395,12 @@ nav ul li a{
   }
   .email-field input[type="button"]{
     padding: 15px;
+  }
+  .footer-content{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .social-links{
+    justify-content: space-evenly;
   }
 }
